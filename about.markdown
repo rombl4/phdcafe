@@ -8,7 +8,7 @@ This is the base Jekyll theme. You can find out more info about customizing your
 
 This is relaxed chill yo good cafe!!
 Hello phdS!!
-![Our meeting](assets/images/Picture1.jpg)
+![Our meeting](assets/images/Picture1.png)
 
 You can find the source code for Minima at GitHub:
 [jekyll][jekyll-organization] /
