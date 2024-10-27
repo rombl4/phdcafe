@@ -4,3 +4,5 @@
 
 layout: home
 ---
+Hello phdS!!
+![Our meeting](assets/images/Picture1.jpg)
