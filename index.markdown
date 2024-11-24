@@ -4,7 +4,7 @@
 
 layout: home
 ---
-Hello liebe PhDs und Hobby-wissenschaflicher!!
+Hello0 liebe PhDs und Hobby-wissenschaflicher!!
 
 
 Das **Open Science Café** bietet einen inspirierenden Ort, an dem wissenschaftliche Ideen in einer entspannten Atmosphäre ausgetauscht werden können. Der Fokus liegt auf **Klimabildung** und **Wissenschaftskommunikation**. Die Zielgruppe umfasst:
