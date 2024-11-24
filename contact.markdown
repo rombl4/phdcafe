@@ -9,18 +9,14 @@ permalink: /contact/
 We’d love to hear from you! Please reach out using the information below.
 
 ## Email
-- **General Inquiries**: [email@example.com](mailto:email@example.com)
-- **Support**: [support@example.com](mailto:support@example.com)
+- **General Inquiries**: [support@phdcafe.de](mailto:support@phdcafe.de)
+- **Cultural and Research program**: [romanguljaev@gmail.com](mailto:romanguljaev@gmail.com)
+
 
 ## Phone
-- **Office**: (123) 456-7890
+- **Office**: (+49) 15780901494
 
-## Address
-123 Main Street  
-City, State, ZIP Code  
-Country
 
 ## Social Media
-- [Facebook](https://facebook.com/yourpage)
-- [Twitter](https://twitter.com/yourpage)
-- [LinkedIn](https://linkedin.com/in/yourprofile)
+- [Meetup](https://www.meetup.com/phd-meetup-munich)
+

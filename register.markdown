@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Event Registration
+#title: Event Registration
 permalink: /register/
 ---
 
