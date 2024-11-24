@@ -19,7 +19,7 @@ Kurz gesagt: alle, die an Wissenschaft und ungezwungenen Gesprächen interessier
 ![Our Meeting](/phdcafe/assets/images/Picture1.png)
 
 
-### Was bieten wir?
+### Was bieten wirr?
 
 Wöchentlich organisieren wir wissenschaftliche Vorträge und Workshops für Menschen, die Wissenschaft in einem unkomplizierten und spannenden Umfeld besser verstehen möchten. Unsere Vortragenden sind:
 
