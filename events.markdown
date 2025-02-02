@@ -9,5 +9,6 @@ permalink: /events/
 ## Upcoming Events
 - **PhD cafe meetup**: 15.07.2025 München
 - [Register for this event](/phdcafe/register/)
+
 ## Past Events
-https://www.meetup.com/phd-meetup-munich
+- [Meetup](https://www.meetup.com/phd-meetup-munich)
