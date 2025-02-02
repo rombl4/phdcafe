@@ -10,8 +10,6 @@ We’d love to hear from you! Please reach out using the information below.
 
 ## Email
 - **General Inquiries**: [support@phdcafe.de](mailto:support@phdcafe.de)
-- **Cultural and Research program**: [romanguljaev@gmail.com](mailto:romanguljaev@gmail.com)
-
 
 ## Phone
 - **Office**: (+49) 15780901494
