@@ -7,7 +7,7 @@ permalink: /about/
 
 ## Projektsidee
 
-Das **Open Science Café** bietet einen inspirierenden Ort, an dem wissenschaftliche Ideen in einer entspannten Atmosphäre ausgetauscht werden können. Der Fokus liegt auf **Klimabildung** und **Wissenschaftskommunikation**. Die Zielgruppe umfasst:
+Das **Open Science Café** bietet einen inspirierenden Ort, an dem wissenschaftliche Ideen in einer entspannten Atmosphäre ausgetauscht werden können. Der Fokus liegt auf **Bildung** und **Wissenschaftskommunikation**. Die Zielgruppe umfasst:
 
 - Studierende
 - Forschende
@@ -26,26 +26,24 @@ Wöchentlich organisieren wir wissenschaftliche Vorträge und Workshops für Men
 - **PhD-Studenten** von Münchens führenden Universitäten  
 - Forschende aus anderen renommierten Institutionen  
 
-Dieses Konzept wurde bereits erfolgreich getestet. Zwischen 2022 und 2023 führte der Gründer PhD-Meetups mit DAAD-Stipendiaten durch – ein Format, das als Vorstufe für das Open Science Café diente.
 
 ---
 
-## Bedarf
+### Warum ist das wichtig?
 
-Zahlreiche Studien zeigen: Es gibt weiterhin **Missverständnisse und Defizite** in der Vermittlung wissenschaftlicher Prozesse – selbst unter gut ausgebildeten Menschen. 
+Zahlreiche Studien zeigen: Es gibt weiterhin Missverständnisse und Defizite in der Vermittlung wissenschaftlicher Prozesse – selbst unter gut ausgebildeten Menschen. 
 
 Obwohl populärwissenschaftliche Formate wie Online-Ressourcen oder öffentliche Lektionen wertvolle Arbeit leisten, besteht **weiterhin großes Potenzial** für direkten Austausch zwischen Wissenschaft und Gesellschaft.  
 
-### Warum ist das wichtig?
 
 Die **Europäische Kommission** betont: Fundiertes wissenschaftliches Verständnis ist ein entscheidendes Instrument für die Gesellschaft. Gleichzeitig zeigen **Eurobarometer-Studien**, dass EU-Bürger positiv gegenüber Wissenschaft und Forschenden eingestellt sind. Es gibt jedoch den Wunsch, dass Wissenschaftler stärker mit der Öffentlichkeit und politischen Entscheidungsträgern interagieren.  
 
-Wir glauben, dass ein **offener Raum für Wissenschaftskommunikation** in München eine innovative Lösung für diese Herausforderungen darstellt – insbesondere angesichts des Klimawandels.
+Wir glauben, dass ein **offener Raum für Wissenschaftskommunikation** in München eine innovative Lösung für diese Herausforderungen darstellt.
 
 ---
 
 ## Ziele
 
-1. **Bewusstsein steigern**: Für Forschungsarbeiten zu Klima, Geowissenschaften und Nachhaltigkeit.  
-2. **Dialog fördern**: Wissenschaftler – von jungen Doktoranden bis zu erfahrenen Forschern – in Austausch mit der Öffentlichkeit bringen.  
-3. **Vertrauen stärken**: In die Kommunikation wissenschaftlicher Erkenntnisse und die Zusammenarbeit mit der Öffentlichkeit.  
+1. **Bewusstsein steigern**: für wissenschaftliche Forschung und deren Bedeutung.
+2. **Dialog fördern**: en Austausch zwischen Wissenschaftlern aller Karrierestufen, von jungen Doktoranden bis hin zu erfahrenen Forschern, und der Öffentlichkeit stärken.
+3. **Vertrauen aufbauen**: in die Wissenschaftskommunikation und die Zusammenarbeit zwischen Forschung und Gesellschaft.
