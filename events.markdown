@@ -7,9 +7,7 @@ permalink: /events/
 # Events Calendar
 
 ## Upcoming Events
-- **Event Name**: [Description of event, date, location, and any links if applicable]
-- **Event Name**: [Details of another upcoming event]
+- **PhD cafe meetup**: 15.07.2025 München
 - [Register for this event](/phdcafe/register/)
 ## Past Events
-- **Event Name**: [Description, date, and recap if applicable]
-- **Event Name**: [Details of another past event]
+https://www.meetup.com/phd-meetup-munich
