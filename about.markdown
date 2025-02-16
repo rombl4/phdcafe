@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 
-## Projektsidee THis
+## Projektsidee this
 
 Das **Open Science Café** bietet einen inspirierenden Ort, an dem wissenschaftliche Ideen in einer entspannten Atmosphäre ausgetauscht werden können. Der Fokus liegt auf **Bildung** und **Wissenschaftskommunikation**. Die Zielgruppe umfasst:
 
