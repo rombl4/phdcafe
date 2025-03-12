@@ -15,7 +15,44 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebPage","headline":"Contact Us","url":"http://localhost:4000/phdcafe/contact/"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/phdcafe/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/phdcafe/feed.xml" /></head>
+<link rel="stylesheet" href="/phdcafe/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/phdcafe/feed.xml" />
+<style>
+  .language-selector {
+    text-align: right;
+    padding: 10px;
+  }
+  .language-btn {
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+    border-radius: 3px;
+  }
+  .language-btn.active {
+    background: #e0e0e0;
+    font-weight: bold;
+  }
+  .content-de, .content-en {
+    display: none;
+  }
+  .content-de.active, .content-en.active {
+    display: block;
+  }
+  .title-de, .title-en {
+    display: none;
+  }
+  .title-de.active, .title-en.active {
+    display: block;
+  }
+  .nav-de, .nav-en {
+    display: none;
+  }
+  .nav-de.active, .nav-en.active {
+    display: inline;
+  }
+</style>
+</head>
 <body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/phdcafe/"></a><nav class="site-nav">
@@ -28,43 +65,91 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/phdcafe/about/">About</a><a class="page-link" href="/phdcafe/contact/">Contact Us</a><a class="page-link" href="/phdcafe/events/">Events</a></div>
+        <div class="trigger">
+          <span class="nav-de active"><a class="page-link" href="/phdcafe/about/">Über uns</a><a class="page-link" href="/phdcafe/contact/">Kontakt</a><a class="page-link" href="/phdcafe/events/">Veranstaltungen</a></span>
+          <span class="nav-en"><a class="page-link" href="/phdcafe/about/">About</a><a class="page-link" href="/phdcafe/contact/">Contact Us</a><a class="page-link" href="/phdcafe/events/">Events</a></span>
+        </div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
+        <div class="language-selector">
+          <button class="language-btn active" onclick="switchLanguage('de')">Deutsch</button>
+          <button class="language-btn" onclick="switchLanguage('en')">English</button>
+        </div>
+
         <article class="post">
+          <header class="post-header">
+            <h1 class="post-title">
+              <span class="title-de active">Kontakt</span>
+              <span class="title-en">Contact Us</span>
+            </h1>
+          </header>
 
-  <header class="post-header">
-    <h1 class="post-title">Contact Us</h1>
-  </header>
+          <div class="post-content">
+            <div class="content-de active">
+              <h1 id="kontakt">Kontakt</h1>
 
-  <div class="post-content">
-    <h1 id="contact-us">Contact Us</h1>
+              <p>Wir freuen uns von Ihnen zu hören! Bitte kontaktieren Sie uns über die folgenden Wege.</p>
 
-<p>We’d love to hear from you! Please reach out using the information below.</p>
+              <h2 id="email">E-Mail</h2>
+              <ul>
+                <li><strong>Allgemeine Anfragen</strong>: <a href="mailto:support@phdcafe.de">support@phdcafe.de</a></li>
+              </ul>
 
-<h2 id="email">Email</h2>
-<ul>
-  <li><strong>General Inquiries</strong>: <a href="mailto:support@phdcafe.de">support@phdcafe.de</a></li>
-</ul>
+              <h2 id="telefon">Telefon</h2>
+              <ul>
+                <li><strong>Büro</strong>: (+49) 15780901494</li>
+              </ul>
 
-<h2 id="phone">Phone</h2>
-<ul>
-  <li><strong>Office</strong>: (+49) 15780901494</li>
-</ul>
+              <h2 id="social-media">Social Media</h2>
+              <ul>
+                <li><a href="https://www.meetup.com/phd-meetup-munich">Meetup</a></li>
+              </ul>
+            </div>
 
-<h2 id="social-media">Social Media</h2>
-<ul>
-  <li><a href="https://www.meetup.com/phd-meetup-munich">Meetup</a></li>
-</ul>
+            <div class="content-en">
+              <h1 id="contact-us">Contact Us</h1>
 
+              <p>We'd love to hear from you! Please reach out using the information below.</p>
 
-  </div>
+              <h2 id="email">Email</h2>
+              <ul>
+                <li><strong>General Inquiries</strong>: <a href="mailto:support@phdcafe.de">support@phdcafe.de</a></li>
+              </ul>
 
-</article>
+              <h2 id="phone">Phone</h2>
+              <ul>
+                <li><strong>Office</strong>: (+49) 15780901494</li>
+              </ul>
 
+              <h2 id="social-media">Social Media</h2>
+              <ul>
+                <li><a href="https://www.meetup.com/phd-meetup-munich">Meetup</a></li>
+              </ul>
+            </div>
+          </div>
+        </article>
       </div>
+
+      <script>
+        // Store the selected language in localStorage
+        function switchLanguage(lang) {
+          localStorage.setItem('selectedLanguage', lang);
+          document.querySelectorAll('.content-de, .content-en, .title-de, .title-en, .nav-de, .nav-en').forEach(el => el.classList.remove('active'));
+          document.querySelectorAll('.language-btn').forEach(btn => btn.classList.remove('active'));
+          document.querySelectorAll(`.content-${lang}, .title-${lang}, .nav-${lang}`).forEach(el => el.classList.add('active'));
+          document.querySelector(`.language-btn[onclick="switchLanguage('${lang}')"]`).classList.add('active');
+        }
+
+        // Apply the stored language preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+          const storedLang = localStorage.getItem('selectedLanguage');
+          if (storedLang) {
+            switchLanguage(storedLang);
+          }
+        });
+      </script>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/phdcafe/"></data>
 
