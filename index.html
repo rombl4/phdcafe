@@ -12,7 +12,32 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebSite","url":"http://localhost:4000/phdcafe/"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/phdcafe/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/phdcafe/feed.xml" /></head>
+<link rel="stylesheet" href="/phdcafe/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/phdcafe/feed.xml" />
+<style>
+  .language-selector {
+    text-align: right;
+    padding: 10px;
+  }
+  .language-btn {
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+    border-radius: 3px;
+  }
+  .language-btn.active {
+    background: #e0e0e0;
+    font-weight: bold;
+  }
+  .content-de, .content-en {
+    display: none;
+  }
+  .content-de.active, .content-en.active {
+    display: block;
+  }
+</style>
+</head>
 <body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/phdcafe/"></a><nav class="site-nav">
@@ -30,25 +55,54 @@
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home"><p>Hello liebe PhDs und Hobby-wissenschaflicher!! hey hey! <img src="assets/images/logo.jpg" alt="PhD Café" /></p>
+        <div class="language-selector">
+          <button class="language-btn active" onclick="switchLanguage('de')">Deutsch</button>
+          <button class="language-btn" onclick="switchLanguage('en')">English</button>
+        </div>
+        
+        <div class="home">
+          <div class="content-de active">
+            <p>Hello liebe PhDs und Hobby-wissenschaflicher!! hey hey! <img src="assets/images/logo.jpg" alt="PhD Café" /></p>
 
-<p>Das <strong>Open Science Café</strong> bietet einen inspirierenden Ort, an dem wissenschaftliche Ideen in einer entspannten Atmosphäre ausgetauscht werden können. Der Fokus liegt auf <strong>Klimabildung</strong> und <strong>Wissenschaftskommunikation</strong>. Die Zielgruppe umfasst:</p>
+            <p>Das <strong>Open Science Café</strong> bietet einen inspirierenden Ort, an dem wissenschaftliche Ideen in einer entspannten Atmosphäre ausgetauscht werden können. Der Fokus liegt auf <strong>Klimabildung</strong> und <strong>Wissenschaftskommunikation</strong>. Die Zielgruppe umfasst:</p>
 
-<ul>
-  <li>Studierende</li>
-  <li>Forschende</li>
-  <li>Die allgemeine Öffentlichkeit</li>
-</ul>
+            <ul>
+              <li>Studierende</li>
+              <li>Forschende</li>
+              <li>Die allgemeine Öffentlichkeit</li>
+            </ul>
 
-<p>Kurz gesagt: alle, die an Wissenschaft und ungezwungenen Gesprächen interessiert sind.</p>
+            <p>Kurz gesagt: alle, die an Wissenschaft und ungezwungenen Gesprächen interessiert sind.</p>
+          </div>
 
-<p><img src="assets/images/Picture1.png" alt="Our meeting" /></p>
+          <div class="content-en">
+            <p>Hello dear PhDs and hobby scientists!! hey hey! <img src="assets/images/logo.jpg" alt="PhD Café" /></p>
 
-<p><a href="contact/">Contact Us</a></p>
+            <p>The <strong>Open Science Café</strong> provides an inspiring space where scientific ideas can be exchanged in a relaxed atmosphere. The focus is on <strong>climate education</strong> and <strong>science communication</strong>. Our target audience includes:</p>
 
-</div>
+            <ul>
+              <li>Students</li>
+              <li>Researchers</li>
+              <li>The general public</li>
+            </ul>
 
+            <p>In short: anyone interested in science and casual conversations.</p>
+          </div>
+
+          <p><img src="assets/images/Picture1.png" alt="Our meeting" /></p>
+
+          <p><a href="contact/">Contact Us</a></p>
+        </div>
       </div>
+
+      <script>
+        function switchLanguage(lang) {
+          document.querySelectorAll('.content-de, .content-en').forEach(el => el.classList.remove('active'));
+          document.querySelectorAll('.language-btn').forEach(btn => btn.classList.remove('active'));
+          document.querySelector(`.content-${lang}`).classList.add('active');
+          document.querySelector(`.language-btn[onclick="switchLanguage('${lang}')"]`).classList.add('active');
+        }
+      </script>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/phdcafe/"></data>
 
