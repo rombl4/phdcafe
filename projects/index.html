@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects</title>
+  <meta name="generator" content="Jekyll v4.3.4" />
+  <meta property="og:title" content="Projects" />
+  <meta property="og:locale" content="en_US" />
+  <link rel="canonical" href="http://localhost:4000/phdcafe/projects/" />
+  <meta property="og:url" content="http://localhost:4000/phdcafe/projects/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="twitter:title" content="Projects" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebPage","headline":"Projects","url":"http://localhost:4000/phdcafe/projects/"}</script>
+  <link rel="stylesheet" href="/phdcafe/assets/main.css">
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/phdcafe/feed.xml" />
+  <style>
+    .language-selector {
+      text-align: right;
+      padding: 10px;
+    }
+    .language-btn {
+      padding: 5px 10px;
+      margin: 0 5px;
+      cursor: pointer;
+      border: 1px solid #ccc;
+      background: #f8f8f8;
+      border-radius: 3px;
+    }
+    .language-btn.active {
+      background: #e0e0e0;
+      font-weight: bold;
+    }
+    .content-de, .content-en {
+      display: none;
+    }
+    .content-de.active, .content-en.active {
+      display: block;
+    }
+    .title-de, .title-en {
+      display: none;
+    }
+    .title-de.active, .title-en.active {
+      display: block;
+    }
+    .nav-de, .nav-en {
+      display: none;
+    }
+    .nav-de.active, .nav-en.active {
+      display: inline;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem 0;
+    }
+    .project-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+    .project-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .project-content {
+      padding: 1.5rem;
+    }
+    .project-title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+    .project-description {
+      color: #666;
+      line-height: 1.6;
+    }
+    .project-tags {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+    .project-tag {
+      background: #f0f0f0;
+      padding: 0.3rem 0.8rem;
+      border-radius: 15px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    @media (max-width: 768px) {
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="wrapper">
+      <a class="site-title" rel="author" href="/phdcafe/"></a>
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+        <div class="trigger">
+          <span class="nav-de active">
+            <a class="page-link" href="/phdcafe/about/">Über uns</a>
+            <a class="page-link" href="/phdcafe/contact/">Kontakt</a>
+            <a class="page-link" href="/phdcafe/events/">Veranstaltungen</a>
+            <a class="page-link" href="/phdcafe/projects/">Projekte</a>
+          </span>
+          <span class="nav-en">
+            <a class="page-link" href="/phdcafe/about/">About</a>
+            <a class="page-link" href="/phdcafe/contact/">Contact Us</a>
+            <a class="page-link" href="/phdcafe/events/">Events</a>
+            <a class="page-link" href="/phdcafe/projects/">Projects</a>
+          </span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      <div class="language-selector">
+        <button class="language-btn active" onclick="switchLanguage('de')">Deutsch</button>
+        <button class="language-btn" onclick="switchLanguage('en')">English</button>
+      </div>
+
+      <article class="post">
+        <header class="post-header">
+          <h1 class="post-title">
+            <span class="title-de active">Projekte</span>
+            <span class="title-en">Projects</span>
+          </h1>
+        </header>
+
+        <div class="post-content">
+          <div class="content-de active">
+            <div class="projects-grid">
+              <div class="project-card">
+                <img src="/phdcafe/assets/images/space.jpg" alt="BIOSpace Café" class="project-image">
+                <div class="project-content">
+                  <h2 class="project-title">BIOSpace Café</h2>
+                  <p class="project-description">
+                    Die Europäische Weltraumorganisation (ESA) startet 2025 mehrere spannende Missionen mit Open Science Aspekten. Eine der größten und am meisten erwarteten ist die BIOMASS-Mission. Die Daten dieser Mission werden öffentlich zugänglich sein. Das BIOSpace Café zielt darauf ab, Bürgerinnen und Bürger bei der Nutzung dieser Daten zu unterstützen und sie dazu zu ermutigen, durch die Sammlung von Referenzdaten vor Ort zur Validierung der Satellitenmessungen beizutragen. Im BIOSpace Café werden Tutorials zur Nutzung von Satellitendatenprodukten und zur Sammlung von Referenzdaten vor Ort angeboten.
+                  </p>
+                  <div class="project-tags">
+                    <span class="project-tag">Open Science</span>
+                    <span class="project-tag">ESA</span>
+                    <span class="project-tag">BIOMASS</span>
+                    <span class="project-tag">Citizen Science</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-en">
+            <div class="projects-grid">
+              <div class="project-card">
+                <img src="/phdcafe/assets/images/space.jpg" alt="BIOSpace Café" class="project-image">
+                <div class="project-content">
+                  <h2 class="project-title">BIOSpace Café</h2>
+                  <p class="project-description">
+                    The European Space Agency (ESA) is launching several exciting missions in 2025 that involve an Open Science aspect. One of the largest and most anticipated is the BIOMASS mission. The data from this mission will be publicly available. The BIOSpace Café aims to support citizens in using this data and encourages them to contribute by collecting reference in-situ data, which will help validate satellite measurements. Tutorials on how to use satellite data products and how to collect in-situ reference data will be provided within the BIOSpace Café.
+                  </p>
+                  <div class="project-tags">
+                    <span class="project-tag">Open Science</span>
+                    <span class="project-tag">ESA</span>
+                    <span class="project-tag">BIOMASS</span>
+                    <span class="project-tag">Citizen Science</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <script>
+      function switchLanguage(lang) {
+        localStorage.setItem('selectedLanguage', lang);
+        document.querySelectorAll('.content-de, .content-en, .title-de, .title-en, .nav-de, .nav-en').forEach(el => el.classList.remove('active'));
+        document.querySelectorAll('.language-btn').forEach(btn => btn.classList.remove('active'));
+        document.querySelectorAll(`.content-${lang}, .title-${lang}, .nav-${lang}`).forEach(el => el.classList.add('active'));
+        document.querySelector(`.language-btn[onclick="switchLanguage('${lang}')"]`).classList.add('active');
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        const storedLang = localStorage.getItem('selectedLanguage');
+        if (storedLang) {
+          switchLanguage(storedLang);
+        }
+      });
+    </script>
+  </main>
+  <footer class="site-footer h-card">
+    <data class="u-url" href="/phdcafe/"></data>
+    <div class="wrapper">
+      <h2 class="footer-heading"></h2>
+      <div class="footer-col-wrapper">
+        <div class="footer-col footer-col-1">
+          <ul class="contact-list">
+            <li class="p-name"></li>
+            <li><a class="u-email" href="mailto:support@phdcafe.de">support@phdcafe.de</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-col-2">
+          <ul class="social-media-list"></ul>
+        </div>
+        <div class="footer-col footer-col-3">
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html> 

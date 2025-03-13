@@ -36,6 +36,47 @@
   .content-de.active, .content-en.active {
     display: block;
   }
+  .home {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  
+  .text-content {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .image-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (max-width: 768px) {
+    .content-wrapper {
+      flex-direction: column;
+    }
+    
+    .image-content {
+      order: -1;
+    }
+  }
 </style>
 </head>
 <body><header class="site-header" role="banner">
@@ -50,7 +91,20 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/phdcafe/about/">About</a><a class="page-link" href="/phdcafe/contact/">Contact Us</a><a class="page-link" href="/phdcafe/events/">Events</a></div>
+        <div class="trigger">
+          <span class="nav-de active">
+            <a class="page-link" href="/phdcafe/about/">Über uns</a>
+            <a class="page-link" href="/phdcafe/contact/">Kontakt</a>
+            <a class="page-link" href="/phdcafe/events/">Veranstaltungen</a>
+            <a class="page-link" href="/phdcafe/projects/">Projekte</a>
+          </span>
+          <span class="nav-en">
+            <a class="page-link" href="/phdcafe/about/">About</a>
+            <a class="page-link" href="/phdcafe/contact/">Contact Us</a>
+            <a class="page-link" href="/phdcafe/events/">Events</a>
+            <a class="page-link" href="/phdcafe/projects/">Projects</a>
+          </span>
+        </div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -61,35 +115,38 @@
         </div>
         
         <div class="home">
-          <div class="content-de active">
-            <p>Hello liebe PhDs und Hobby-wissenschaflicher!! hey hey! <img src="assets/images/logo.jpg" alt="PhD Café" /></p>
+          <div class="content-wrapper">
+            <div class="text-content">
+              <div class="content-de active">
+                <p>Das <strong>Open Science Café</strong> bietet einen inspirierenden Ort, an dem wissenschaftliche Ideen in einer entspannten Atmosphäre ausgetauscht werden können. Der Fokus liegt auf <strong>Klimabildung</strong> und <strong>Wissenschaftskommunikation</strong>. Die Zielgruppe umfasst:</p>
 
-            <p>Das <strong>Open Science Café</strong> bietet einen inspirierenden Ort, an dem wissenschaftliche Ideen in einer entspannten Atmosphäre ausgetauscht werden können. Der Fokus liegt auf <strong>Klimabildung</strong> und <strong>Wissenschaftskommunikation</strong>. Die Zielgruppe umfasst:</p>
+                <ul>
+                  <li>Studierende</li>
+                  <li>Forschende</li>
+                  <li>Die allgemeine Öffentlichkeit</li>
+                </ul>
 
-            <ul>
-              <li>Studierende</li>
-              <li>Forschende</li>
-              <li>Die allgemeine Öffentlichkeit</li>
-            </ul>
+                <p>Kurz gesagt: alle, die an Wissenschaft und ungezwungenen Gesprächen interessiert sind.</p>
+              </div>
 
-            <p>Kurz gesagt: alle, die an Wissenschaft und ungezwungenen Gesprächen interessiert sind.</p>
+              <div class="content-en">
+                <p>The <strong>Open Science Café</strong> provides an inspiring space where scientific ideas can be exchanged in a relaxed atmosphere. The focus is on <strong>climate education</strong> and <strong>science communication</strong>. Our target audience includes:</p>
+
+                <ul>
+                  <li>Students</li>
+                  <li>Researchers</li>
+                  <li>The general public</li>
+                </ul>
+
+                <p>In short: anyone interested in science and casual conversations.</p>
+              </div>
+            </div>
+
+            <div class="image-content">
+              <img src="assets/images/logo.jpg" alt="PhD Café" />
+              <img src="assets/images/Picture1.png" alt="Our meeting" />
+            </div>
           </div>
-
-          <div class="content-en">
-            <p>Hello dear PhDs and hobby scientists!! hey hey! <img src="assets/images/logo.jpg" alt="PhD Café" /></p>
-
-            <p>The <strong>Open Science Café</strong> provides an inspiring space where scientific ideas can be exchanged in a relaxed atmosphere. The focus is on <strong>climate education</strong> and <strong>science communication</strong>. Our target audience includes:</p>
-
-            <ul>
-              <li>Students</li>
-              <li>Researchers</li>
-              <li>The general public</li>
-            </ul>
-
-            <p>In short: anyone interested in science and casual conversations.</p>
-          </div>
-
-          <p><img src="assets/images/Picture1.png" alt="Our meeting" /></p>
 
           <p><a href="contact/">Contact Us</a></p>
         </div>
