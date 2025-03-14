@@ -3,17 +3,17 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Projects</title>
+  <title>Tutorials</title>
   <meta name="generator" content="Jekyll v4.3.4" />
-  <meta property="og:title" content="Projects" />
+  <meta property="og:title" content="Tutorials" />
   <meta property="og:locale" content="en_US" />
-  <link rel="canonical" href="http://localhost:4000/phdcafe/projects/" />
-  <meta property="og:url" content="http://localhost:4000/phdcafe/projects/" />
+  <link rel="canonical" href="http://localhost:4000/phdcafe/projects/tutorials/" />
+  <meta property="og:url" content="http://localhost:4000/phdcafe/projects/tutorials/" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary" />
-  <meta property="twitter:title" content="Projects" />
+  <meta property="twitter:title" content="Tutorials" />
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"WebPage","headline":"Projects","url":"http://localhost:4000/phdcafe/projects/"}</script>
+  {"@context":"https://schema.org","@type":"WebPage","headline":"Tutorials","url":"http://localhost:4000/phdcafe/projects/tutorials/"}</script>
   <link rel="stylesheet" href="/phdcafe/assets/main.css">
   <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/phdcafe/feed.xml" />
   <style>
@@ -33,74 +33,66 @@
       background: #e0e0e0;
       font-weight: bold;
     }
-    .content-de, .content-en {
+    .content-de, .content-en, .title-de, .title-en, .nav-de, .nav-en {
       display: none;
     }
-    .content-de.active, .content-en.active {
+    .content-de.active, .content-en.active, .title-de.active, .title-en.active, .nav-de.active, .nav-en.active {
       display: block;
     }
-    .title-de, .title-en {
-      display: none;
-    }
-    .title-de.active, .title-en.active {
-      display: block;
-    }
-    .nav-de, .nav-en {
-      display: none;
-    }
-    .nav-de.active, .nav-en.active {
-      display: inline;
-    }
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
+    .tutorial-section {
+      max-width: 800px;
+      margin: 0 auto;
       padding: 2rem 0;
     }
-    .project-card {
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      margin: 2rem 0;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .tutorial-card {
       background: #fff;
       border-radius: 12px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      transition: transform 0.3s ease;
+      padding: 2rem;
+      margin: 2rem 0;
     }
-    .project-card:hover {
-      transform: translateY(-5px);
-    }
-    .project-image {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-    .project-content {
-      padding: 1.5rem;
-    }
-    .project-title {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
+    .tutorial-title {
       color: #333;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
     }
-    .project-description {
+    .tutorial-description {
       color: #666;
       line-height: 1.6;
+      margin-bottom: 1.5rem;
     }
-    .project-tags {
-      display: flex;
-      gap: 0.5rem;
-      margin-top: 1rem;
-      flex-wrap: wrap;
+    .resource-list {
+      list-style: none;
+      padding: 0;
+      margin: 1.5rem 0;
     }
-    .project-tag {
-      background: #f0f0f0;
-      padding: 0.3rem 0.8rem;
-      border-radius: 15px;
-      font-size: 0.9rem;
-      color: #555;
+    .resource-list li {
+      margin-bottom: 1rem;
+      padding-left: 1.5rem;
+      position: relative;
     }
-    @media (max-width: 768px) {
-      .projects-grid {
-        grid-template-columns: 1fr;
-      }
+    .resource-list li:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #666;
     }
   </style>
 </head>
@@ -144,47 +136,47 @@
       <article class="post">
         <header class="post-header">
           <h1 class="post-title">
-            <span class="title-de active">Projekte</span>
-            <span class="title-en">Projects</span>
+            <span class="title-de active">Tutorials</span>
+            <span class="title-en">Tutorials</span>
           </h1>
         </header>
 
         <div class="post-content">
           <div class="content-de active">
-            <div class="projects-grid">
-              <div class="project-card">
-                <img src="/phdcafe/assets/images/space.jpg" alt="BIOSpace Café" class="project-image">
-                <div class="project-content">
-                  <h2 class="project-title">BIOSpace Café</h2>
-                  <p class="project-description">
-                    Die Europäische Weltraumorganisation (ESA) startet 2025 mehrere spannende Missionen mit Open Science Aspekten. Eine der größten und am meisten erwarteten ist die BIOMASS-Mission. Die Daten dieser Mission werden öffentlich zugänglich sein. Das BIOSpace Café zielt darauf ab, Bürgerinnen und Bürger bei der Nutzung dieser Daten zu unterstützen und sie dazu zu ermutigen, durch die Sammlung von Referenzdaten vor Ort zur Validierung der Satellitenmessungen beizutragen. Im BIOSpace Café werden Tutorials zur Nutzung von Satellitendatenprodukten und zur Sammlung von Referenzdaten vor Ort angeboten. <a href="/phdcafe/projects/tutorials/">Zu den Tutorials →</a>
-                  </p>
-                  <div class="project-tags">
-                    <span class="project-tag">Open Science</span>
-                    <span class="project-tag">ESA</span>
-                    <span class="project-tag">BIOMASS</span>
-                    <span class="project-tag">Citizen Science</span>
-                  </div>
+            <div class="tutorial-section">
+              <div class="tutorial-card">
+                <h2 class="tutorial-title">Verwendung von Open Source Daten</h2>
+                <p class="tutorial-description">
+                  In diesem Tutorial lernen Sie, wie Sie Open Source Daten effektiv nutzen können. Wir konzentrieren uns besonders auf Satellitendaten der ESA BIOMASS-Mission und zeigen Ihnen Schritt für Schritt, wie Sie:
+                </p>
+                <ul class="resource-list">
+                  <li>Zugang zu den Daten erhalten</li>
+                  <li>Die Daten herunterladen und verarbeiten</li>
+                  <li>Grundlegende Analysen durchführen</li>
+                  <li>Ihre eigenen Referenzdaten sammeln und beitragen</li>
+                </ul>
+                <div class="video-container">
+                  <iframe src="https://www.youtube.com/embed/bqiuZj_-UaQ" title="Tutorial: Verwendung von Open Source Daten" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="content-en">
-            <div class="projects-grid">
-              <div class="project-card">
-                <img src="/phdcafe/assets/images/space.jpg" alt="BIOSpace Café" class="project-image">
-                <div class="project-content">
-                  <h2 class="project-title">BIOSpace Café</h2>
-                  <p class="project-description">
-                    The European Space Agency (ESA) is launching several exciting missions in 2025 that involve an Open Science aspect. One of the largest and most anticipated is the BIOMASS mission. The data from this mission will be publicly available. The BIOSpace Café aims to support citizens in using this data and encourages them to contribute by collecting reference in-situ data, which will help validate satellite measurements. Tutorials on how to use satellite data products and how to collect in-situ reference data will be provided within the BIOSpace Café. <a href="/phdcafe/projects/tutorials/">View Tutorials →</a>
-                  </p>
-                  <div class="project-tags">
-                    <span class="project-tag">Open Science</span>
-                    <span class="project-tag">ESA</span>
-                    <span class="project-tag">BIOMASS</span>
-                    <span class="project-tag">Citizen Science</span>
-                  </div>
+            <div class="tutorial-section">
+              <div class="tutorial-card">
+                <h2 class="tutorial-title">How to Use Open Source Data</h2>
+                <p class="tutorial-description">
+                  In this tutorial, you'll learn how to effectively use open source data. We focus particularly on satellite data from the ESA BIOMASS mission and show you step by step how to:
+                </p>
+                <ul class="resource-list">
+                  <li>Access the data</li>
+                  <li>Download and process the data</li>
+                  <li>Perform basic analyses</li>
+                  <li>Collect and contribute your own reference data</li>
+                </ul>
+                <div class="video-container">
+                  <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Tutorial: How to Use Open Source Data" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
               </div>
             </div>
